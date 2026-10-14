@@ -1,4 +1,4 @@
-name: Frigate (Full Access) Beta
+name: Frigate (Full Access)
 version: 0.18.1
 breaking_versions:
   - 0.18.0
@@ -8,7 +8,7 @@ breaking_versions:
   - 0.14.0
 panel_icon: "mdi:cctv"
 panel_title: Frigate
-slug: frigate-fa-beta
+slug: frigate-fa
 description: NVR with realtime local object detection for IP cameras
 url: "https://github.com/blakeblackshear/frigate"
 image: ghcr.io/blakeblackshear/frigate
@@ -54,7 +54,6 @@ arch:
   - aarch64
 map:
   - "media:rw"
-  - "ssl"
   - "addon_config:rw"
-  # Mount old config dir to be migrated by the image
   - "homeassistant_config:rw"
+  - "ssl"
