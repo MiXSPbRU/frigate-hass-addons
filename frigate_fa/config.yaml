@@ -1,8 +1,8 @@
-name: "Frigate (Old 0.13.2)"
+name: "Frigate Legacy (0.13.2)"
 version: "0.13.2"
 slug: "frigate_old"
-description: "NVR with realtime local object detection for IP cameras (Legacy YAML config)"
-url: "https://github.com/blakeblackshear/frigate"
+description: "NVR with realtime local object detection for IP cameras (YAML config)"
+url: "https://github.com"
 image: "ghcr.io/blakeblackshear/frigate:0.13.2"
 startup: application
 boot: auto
@@ -17,7 +17,8 @@ hassio_api: true
 host_network: false
 tmpfs: true
 video: true
-full_access: true
+privileged:
+  - SYS_ADMIN
 ports:
   5000/tcp: null
   1935/tcp: null
